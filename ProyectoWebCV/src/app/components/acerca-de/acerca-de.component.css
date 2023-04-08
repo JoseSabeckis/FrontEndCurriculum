@@ -1,0 +1,39 @@
+.row{
+    padding: 15px;
+    background-color:bisque;
+    text-align: center;
+}
+
+#name{
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+#perfil{
+    border-radius: 100%;
+}
+
+@media (min-width:576px) {
+
+    #perfil{
+        box-shadow: 5px 5px 5px 3px gray;
+        position: absolute;
+        width: 15%;
+        left: 2%;
+        top: 320px;
+    }
+
+}
+
+
+@media (max-width:575px) {
+
+    #perfil{
+        position: absolute;
+        border-radius: 10%;
+        width: 30%;
+        left: 35%;
+        top: 220px;
+    }
+
+}
