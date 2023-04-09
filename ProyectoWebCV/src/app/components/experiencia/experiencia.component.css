@@ -1,0 +1,16 @@
+.row{
+    padding: 20px;
+}
+
+div{
+    background-color: bisque;
+}
+
+h2, h3{
+    display: inline;
+    text-decoration: underline grey;
+}
+
+h1{
+    background-color: aquamarine;
+}
