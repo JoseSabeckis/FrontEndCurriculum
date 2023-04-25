@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TokenService } from 'src/app/service/token/token.service';
 
 @Component({
   selector: 'app-social',
@@ -8,12 +9,24 @@ import { Router } from '@angular/router';
 })
 export class SocialComponent implements OnInit{
 
-  constructor(private router: Router){
+  isLogged=false;
+
+  constructor(private router: Router, private tokeService: TokenService){
 
   }
 
   ngOnInit(): void {
-    
+    if(this.tokeService.getToken()){
+      this.isLogged=true;
+    }
+    else{
+      this.isLogged=false;
+    }
+  }
+
+  onLogOut():void{
+    this.tokeService.LogOut();
+    window.location.reload();
   }
 
   login(){

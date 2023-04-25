@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ExperienciaService {
 
-  Url = 'http://localhost:8080/experiencia/'; 
+  Url = 'http://localhost:8080/api/test/experiencia/'; 
 
   constructor(private http: HttpClient) { }
 

@@ -8,12 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class AcercaService {
 
-  Url = 'http://localhost:8080/acerca/'; 
+  Url = 'http://localhost:8080/api/test/acerca/';
 
   constructor(private http: HttpClient) { }
 
   public getAcercaDe() : Observable<acerca>{
     return this.http.get<acerca>(this.Url+'traer/perfil');
   }
-
+ 
 }
