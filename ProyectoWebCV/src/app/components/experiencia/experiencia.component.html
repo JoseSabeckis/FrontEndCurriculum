@@ -1,14 +1,23 @@
 <div class="row">
 
-    <h1>Experiencia Laboral</h1>
+    <div class="col-md-12">
+        <h1>Experiencia Laboral</h1>
+        <button type="button">New</button>
+    </div>
 
     <div class="col-md-11">
 
-        <ul>
-            <li><h2>{{experiencia.titulo}}</h2> <h3> - {{experiencia.years}} -</h3>
-                <p>{{experiencia.descripcion}}</p>
-            </li>
-        </ul> 
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let exp of experiencia">
+                    <td>{{exp.titulo}} - {{exp.years}}</td>
+                    <td>{{exp.descripcion}}</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>
+            </tbody>
+        </table>
+         
 
     </div>
 
