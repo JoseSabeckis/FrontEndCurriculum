@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
       this.isLogged = true;
       this.isLogginDail = false;
       this.tokeService.setToken(data.token);//----------
-      this.tokeService.setUserName(data.setUserName);//-------------------
+      this.tokeService.setUserName(data.username);//-------------------
       this.roles = data.authorities;
       this.router.navigate([''])
     }, err => {

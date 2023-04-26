@@ -15,7 +15,7 @@
       
           <!-- Login Form -->
           <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
-            <input type="text" id="username" class="fadeIn second" name="username" placeholder="usuario" [(ngModel)]="username" required>
+            <input type="text" id="username" class="fadeIn second" name="username" placeholder="username" [(ngModel)]="username" required>
             <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" [(ngModel)]="password" required>
             <input type="submit" class="fadeIn fourth" value="LogIn">
           </form>
