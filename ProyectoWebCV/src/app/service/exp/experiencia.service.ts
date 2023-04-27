@@ -25,7 +25,7 @@ export class ExperienciaService {
   }
 
   public update(id:number, exp:experiencia) : Observable<experiencia>{
-    return this.http.put<any>(this.Url + `update/${id}`, exp);
+    return this.http.put<any>(this.Url + `modificar/${id}`, exp);
   }
 
   public delete(id:number) : Observable<experiencia>{

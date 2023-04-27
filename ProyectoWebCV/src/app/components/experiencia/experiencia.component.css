@@ -6,11 +6,16 @@ div{
     background-color: bisque;
 }
 
-h2, h3{
+h3{
     display: inline;
-    text-decoration: underline grey;
+    text-decoration: grey;
 }
 
 h1{
     background-color: aquamarine;
+}
+
+.new{
+    display: flex;
+    justify-content: right;
 }

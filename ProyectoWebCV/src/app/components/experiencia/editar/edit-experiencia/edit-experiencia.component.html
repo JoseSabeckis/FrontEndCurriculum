@@ -1,0 +1,12 @@
+<div class="login" *ngIf="expModify">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header">Modificar Experiencia [exp]</h2>
+  
+    <form class="login-container" (ngSubmit)="onModify()" novalidate #f="ngForm">
+      <p><input type="text" placeholder="titulo" id="titulo" name="titulo" [(ngModel)]="expModify.titulo" required></p>
+      <p><input type="text" placeholder="descripcion" id="descripcion" name="descripcion" [(ngModel)]="expModify.descripcion" required></p>
+      <p><input type="text" placeholder="years" id="years" name="years" [(ngModel)]="expModify.years"></p>
+      <button value="Crear" class="btn btn-dark crear">Modificar</button>
+    </form>
+  </div>

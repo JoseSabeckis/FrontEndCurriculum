@@ -1,0 +1,12 @@
+<div class="login">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header">Crear Experiencia</h2>
+  
+    <form class="login-container" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+      <p><input type="text" placeholder="titulo" id="titulo" name="titulo" [(ngModel)]="titulo" required></p>
+      <p><input type="text" placeholder="descripcion" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required></p>
+      <p><input type="text" placeholder="years" id="years" name="years" [(ngModel)]="years"></p>
+      <button value="Crear" class="btn btn-dark crear">Create</button>
+    </form>
+  </div>

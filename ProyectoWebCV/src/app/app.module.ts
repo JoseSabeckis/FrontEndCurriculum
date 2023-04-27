@@ -20,6 +20,9 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor/interceptor.service';
 import { CommonModule } from '@angular/common';
+import { UpdExperienciaComponent } from './components/experiencia/modify/upd-experiencia/upd-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/editar/edit-experiencia/edit-experiencia.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,8 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     HomeComponent,
     LoginComponent,
+    UpdExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,8 @@ import { CommonModule } from '@angular/common';
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   providers: [
     interceptorProvider
