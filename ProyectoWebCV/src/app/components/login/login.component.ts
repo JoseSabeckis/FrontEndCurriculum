@@ -41,6 +41,7 @@ export class LoginComponent implements OnInit {
         this.isLogginDail = false;
         this.tokeService.setToken(data.accessToken);//----------
         this.tokeService.setUserName(data.username);//-------------------
+        this.tokeService.setAuthorities(data.authorities);//----------
         this.roles = data.authorities;
         this.router.navigate([''])},
         error: err => {

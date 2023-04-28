@@ -23,6 +23,8 @@ import { CommonModule } from '@angular/common';
 import { UpdExperienciaComponent } from './components/experiencia/modify/upd-experiencia/upd-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/editar/edit-experiencia/edit-experiencia.component';
 import { RouterModule } from '@angular/router';
+import { NuevaEducacionComponent } from './components/educacion/new-edu/nueva-educacion/nueva-educacion.component';
+import { EditEducacionComponent } from './components/educacion/editar/edit-educacion/edit-educacion.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { RouterModule } from '@angular/router';
     LoginComponent,
     UpdExperienciaComponent,
     EditExperienciaComponent,
+    NuevaEducacionComponent,
+    EditEducacionComponent,
   ],
   imports: [
     BrowserModule,
