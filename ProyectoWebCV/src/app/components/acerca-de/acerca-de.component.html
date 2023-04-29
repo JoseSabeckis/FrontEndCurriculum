@@ -2,8 +2,10 @@
 
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <img src="../../../assets/img-principales/fotomia.jpg" class="img-fluid" id="perfil">
+        <button class="btn btn-light abajo" routerLink="" *ngIf="isLogged"><i
+            class="bi bi-folder-plus"></i>+</button>
     </div>
-
+    
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <p id="name">{{persona.apellido}} {{persona.nombre}}</p>
         <p>{{persona.titulo}}</p>
@@ -21,6 +23,8 @@
         <br>
         <br>
         <br>
+        <button class="btn btn-light" routerLink=""><i
+            class="bi bi-folder-plus" *ngIf="isLogged"></i>Edit</button>
     </div>
 
 

@@ -2,3 +2,17 @@
     padding: 20px;
     background-color: bisque;
 }
+
+.contorno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moveleft{
+    margin-left: 5px;
+}
+
+.movemore{
+    margin-left: 50px;
+}

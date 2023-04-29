@@ -3,25 +3,40 @@
 
   <button type="button" class="btn btn-dark" routerLink="/nuevahardysoftskill" *ngIf="isLogged">New</button>
 
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  <div class="text-center col-sm-4 col-md-4 col-lg-4 contorno" *ngFor="let skil of skills">
 
-    <tr *ngFor="let skil of skills">
+    <tr>
       <td>
-        <circle-progress title="{{skil.nombre}}" [showImage]="false" [showTitle]="true" [percent]="(skil.porcentaje)" [radius]="90" [outerStrokeWidth]="16"
-          [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'" [animation]="true" [showUnits]="false" [showSubtitle]="false"
-          [animationDuration]="600">
+        <circle-progress 
+        title="{{skil.nombre}}" 
+        [showImage]="false" 
+        [showTitle]="true" 
+        [percent]="(skil.porcentaje)" 
+        [radius]="90" 
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8" 
+        [outerStrokeColor]="'#78C000'" 
+        [innerStrokeColor]="'#C7E596'" 
+        [animation]="true" 
+        [showUnits]="false" 
+        [showSubtitle]="false"
+        [animationDuration]="600">
         </circle-progress>
       </td>
-      <td *ngIf="isLogged"><button class="btn btn-light" routerLink="editarhardysoftskill/{{skil.id}}"><i
-            class="bi bi-folder-plus"></i>Edit</button></td>
-      <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(skil.id)"><i
-            class="bi bi-folder-minus"></i>Delete</button></td>
+      <div class="movemore">
+        <td *ngIf="isLogged"><button class="btn btn-light" routerLink="editarhardysoftskill/{{skil.id}}"><i
+          class="bi bi-folder-plus"></i>Edit</button></td>
+        <td *ngIf="isLogged"><button class="btn btn-danger moveleft" (click)="delete(skil.id)"><i
+          class="bi bi-folder-minus"></i>Delete</button></td>
+      </div>
+      
     </tr>
-
 
   </div>
 
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  <!--
+
+     <div class="text-center col-sm-4 col-md-4 col-lg-4">
     <circle-progress [percent]="85" [radius]="90" [imageSrc]="'../assets/img-principales/html5.png'" [showImage]="true"
       [imageWidth]="50" [imageHeight]="50" [outerStrokeWidth]="16" [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'"
       [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="600">
@@ -35,5 +50,6 @@
     </circle-progress>
   </div>
 
+  -->
 
 </div>

@@ -9,6 +9,12 @@
     margin-top: 10%;
 }
 
+.abajo{
+    margin-top: 150px;
+    margin-left: 170px;
+    background-color: rgb(221, 52, 52);
+}
+
 #perfil{
     border-radius: 100%;
 }
