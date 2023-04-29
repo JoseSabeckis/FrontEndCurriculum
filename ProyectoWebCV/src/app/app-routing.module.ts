@@ -6,6 +6,8 @@ import { UpdExperienciaComponent } from './components/experiencia/modify/upd-exp
 import { EditExperienciaComponent } from './components/experiencia/editar/edit-experiencia/edit-experiencia.component';
 import { NuevaEducacionComponent } from './components/educacion/new-edu/nueva-educacion/nueva-educacion.component';
 import { EditEducacionComponent } from './components/educacion/editar/edit-educacion/edit-educacion.component';
+import { NewHardsoftComponent } from './components/hardsoft/new-hardsoft/new-hardsoft/new-hardsoft.component';
+import { EditHardComponent } from './components/hardsoft/edit-hard/edit-hard/edit-hard.component';
 
 const routes: Routes = [ 
   {path:'', component: HomeComponent},
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path:'nuevaexperiencia', component: UpdExperienciaComponent},
   {path:'editarexperiencia/:id', component: EditExperienciaComponent},
   {path:'nuevaeducacion', component: NuevaEducacionComponent},
-  {path:'editareducacion/:id', component: EditEducacionComponent}
+  {path:'editareducacion/:id', component: EditEducacionComponent},
+  {path:'nuevahardysoftskill', component: NewHardsoftComponent},
+  {path:'editarhardysoftskill/:id', component: EditHardComponent}
 ];
 
 @NgModule({

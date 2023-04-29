@@ -17,7 +17,7 @@ export class InterceptorService {
 
     if(token != null){
       intReq = req.clone({
-        headers: req.headers.set('Authorization', 'Bearer'+token)
+        headers: req.headers.set('Authorization', 'Bearer '+token)//duda--------
       });
     }
     return next.handle(intReq);

@@ -25,6 +25,8 @@ import { EditExperienciaComponent } from './components/experiencia/editar/edit-e
 import { RouterModule } from '@angular/router';
 import { NuevaEducacionComponent } from './components/educacion/new-edu/nueva-educacion/nueva-educacion.component';
 import { EditEducacionComponent } from './components/educacion/editar/edit-educacion/edit-educacion.component';
+import { NewHardsoftComponent } from './components/hardsoft/new-hardsoft/new-hardsoft/new-hardsoft.component';
+import { EditHardComponent } from './components/hardsoft/edit-hard/edit-hard/edit-hard.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { EditEducacionComponent } from './components/educacion/editar/edit-educa
     EditExperienciaComponent,
     NuevaEducacionComponent,
     EditEducacionComponent,
+    NewHardsoftComponent,
+    EditHardComponent,
   ],
   imports: [
     BrowserModule,

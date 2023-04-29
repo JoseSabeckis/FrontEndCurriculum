@@ -1,0 +1,11 @@
+<div class="login">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header">Crear Hard and Soft Skill</h2>
+  
+    <form class="login-container" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+      <p><input type="text" placeholder="nombre" id="nombre" name="nombre" [(ngModel)]="nombre" required></p>
+      <p><input type="text" placeholder="porcentaje" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required></p>
+      <button value="Crear" class="btn btn-dark crear">Create</button>
+    </form>
+  </div>

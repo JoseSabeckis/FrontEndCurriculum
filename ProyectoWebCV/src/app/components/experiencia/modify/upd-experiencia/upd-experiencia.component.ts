@@ -21,7 +21,7 @@ export class UpdExperienciaComponent implements OnInit {
   years!: string;
 
   constructor(private experienciaService: ExperienciaService, private router: Router, private tokeService:TokenService) {
-
+    
   }
 
   ngOnInit(): void {
