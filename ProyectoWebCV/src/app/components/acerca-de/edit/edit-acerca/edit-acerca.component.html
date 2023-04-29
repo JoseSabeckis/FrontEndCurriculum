@@ -1,0 +1,10 @@
+<div class="login" *ngIf="acerca">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header">Modificar Acerca de mi</h2>
+  
+    <form class="login-container" (ngSubmit)="onModify()" novalidate #f="ngForm">
+      <p><input type="text" placeholder="descripcion" id="descripcion" name="descripcion" [(ngModel)]="acerca.descripcion" required></p>
+      <button value="Crear" class="btn btn-dark crear">Modificar</button>
+    </form>
+  </div>

@@ -27,6 +27,7 @@ import { NuevaEducacionComponent } from './components/educacion/new-edu/nueva-ed
 import { EditEducacionComponent } from './components/educacion/editar/edit-educacion/edit-educacion.component';
 import { NewHardsoftComponent } from './components/hardsoft/new-hardsoft/new-hardsoft/new-hardsoft.component';
 import { EditHardComponent } from './components/hardsoft/edit-hard/edit-hard/edit-hard.component';
+import { EditAcercaComponent } from './components/acerca-de/edit/edit-acerca/edit-acerca.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { EditHardComponent } from './components/hardsoft/edit-hard/edit-hard/edi
     EditEducacionComponent,
     NewHardsoftComponent,
     EditHardComponent,
+    EditAcercaComponent,
   ],
   imports: [
     BrowserModule,

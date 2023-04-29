@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { acerca } from 'src/app/models/acerca.model';
 import { persona } from 'src/app/models/persona.model';
 import { AcercaService } from 'src/app/service/acerca.service';
@@ -16,7 +17,7 @@ export class AcercaDeComponent implements OnInit {
 
   isLogged = false;
 
-  constructor(public personaService: PersonaServicioService, public acercaService: AcercaService, private tokenServicio: TokenService){
+  constructor(public personaService: PersonaServicioService, public acercaService: AcercaService, private tokenServicio: TokenService, private activatedRoute: ActivatedRoute){
     
   }
 

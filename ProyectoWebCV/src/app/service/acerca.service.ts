@@ -16,5 +16,9 @@ export class AcercaService {
   public getAcercaDe() : Observable<acerca>{
     return this.http.get<acerca>(this.Url+'traer/perfil');
   }
+
+  public update(id:number, acr:acerca) : Observable<acerca>{
+    return this.http.put<any>(this.Url+`modificar/${1}`, acr);
+  }
  
 }
