@@ -2,14 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { acerca } from '../models/acerca.model';
 import { Observable } from 'rxjs';
-import { enviroment } from 'src/enviroment/enviroment';
+import { environment } from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AcercaService {
 
-  Url = enviroment.Url + 'api/test/acerca/';
+  Url = environment.Url + 'api/test/acerca/';
 
   constructor(private http: HttpClient) { }
 

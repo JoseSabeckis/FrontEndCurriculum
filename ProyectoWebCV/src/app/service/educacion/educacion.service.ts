@@ -3,14 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { educacion } from 'src/app/models/educacion.model';
 import { TokenService } from '../token/token.service';
-import { enviroment } from 'src/enviroment/enviroment';
+import { environment } from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EducacionService {
 
-  Url =  enviroment.Url + 'api/test/educacion/';
+  Url =  environment.Url + 'api/test/educacion/';
 
   constructor(private http: HttpClient) { }
 

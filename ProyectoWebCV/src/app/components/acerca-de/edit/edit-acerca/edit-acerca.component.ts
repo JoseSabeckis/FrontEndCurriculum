@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { acerca } from 'src/app/models/acerca.model';
 import { AcercaService } from 'src/app/service/acerca.service';
 import { TokenService } from 'src/app/service/token/token.service';
-import { enviroment } from 'src/enviroment/enviroment';
 
 @Component({
   selector: 'app-edit-acerca',

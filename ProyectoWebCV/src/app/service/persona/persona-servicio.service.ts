@@ -2,14 +2,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { persona } from 'src/app/models/persona.model';
-import { enviroment } from 'src/enviroment/enviroment';
+import { environment } from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonaServicioService {
 
-  Url = enviroment.Url + 'api/test/personas/';
+  Url = environment.Url + 'api/test/personas/';
 
   constructor(private http: HttpClient) { }
 
