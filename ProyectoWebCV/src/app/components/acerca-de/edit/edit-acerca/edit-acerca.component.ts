@@ -42,7 +42,7 @@ export class EditAcercaComponent implements OnInit{
 
   onModify(): void {
 
-    const id = this.activatedRoute.snapshot.params['id'];
+    const id = 1;
 
     this.acercaService.update(id, this.acerca).subscribe({
         next: data => { this.route.navigate(['']); }, 

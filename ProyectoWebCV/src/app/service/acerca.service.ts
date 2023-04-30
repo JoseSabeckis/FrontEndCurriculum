@@ -18,7 +18,7 @@ export class AcercaService {
   }
 
   public update(id:number, acr:acerca) : Observable<acerca>{
-    return this.http.put<any>(this.Url+`modificar/${1}`, acr);
+    return this.http.put<any>(this.Url+`modificar/${id}`, acr);
   }
  
 }
