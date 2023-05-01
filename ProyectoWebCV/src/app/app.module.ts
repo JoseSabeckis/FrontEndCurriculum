@@ -29,6 +29,9 @@ import { NewHardsoftComponent } from './components/hardsoft/new-hardsoft/new-har
 import { EditHardComponent } from './components/hardsoft/edit-hard/edit-hard/edit-hard.component';
 import { EditAcercaComponent } from './components/acerca-de/edit/edit-acerca/edit-acerca.component';
 import { EditPersonaComponent } from './components/persona/edit-persona/edit-persona.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -61,7 +64,9 @@ import { EditPersonaComponent } from './components/persona/edit-persona/edit-per
     HttpClientModule,
     FormsModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider

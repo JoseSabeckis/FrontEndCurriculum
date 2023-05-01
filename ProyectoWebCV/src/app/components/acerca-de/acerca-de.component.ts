@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { acerca } from 'src/app/models/acerca.model';
 import { persona } from 'src/app/models/persona.model';
 import { AcercaService } from 'src/app/service/acerca.service';
+import { ImageService } from 'src/app/service/img/image.service';
 import { PersonaServicioService } from 'src/app/service/persona/persona-servicio.service';
 import { TokenService } from 'src/app/service/token/token.service';
 
@@ -17,7 +18,8 @@ export class AcercaDeComponent implements OnInit {
 
   isLogged = false;
 
-  constructor(public personaService: PersonaServicioService, public acercaService: AcercaService, private tokenServicio: TokenService, private activatedRoute: ActivatedRoute){
+  constructor(public personaService: PersonaServicioService, public acercaService: AcercaService, private tokenServicio: TokenService, private activatedRoute: ActivatedRoute,
+    public imageService: ImageService){
     
   }
 

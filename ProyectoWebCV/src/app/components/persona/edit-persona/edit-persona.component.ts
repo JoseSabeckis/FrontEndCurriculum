@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { persona } from 'src/app/models/persona.model';
+import { ImageService } from 'src/app/service/img/image.service';
 import { PersonaServicioService } from 'src/app/service/persona/persona-servicio.service';
 import { TokenService } from 'src/app/service/token/token.service';
 
@@ -18,7 +19,8 @@ export class EditPersonaComponent implements OnInit{
 
   persona:persona = null;
 
-  constructor(private activatedRoute: ActivatedRoute, private personaService: PersonaServicioService, private router: Router, private tokenService: TokenService){
+  constructor(private activatedRoute: ActivatedRoute, private personaService: PersonaServicioService, private router: Router, private tokenService: TokenService,
+    public imageService: ImageService){
 
   }
 
@@ -42,7 +44,7 @@ export class EditPersonaComponent implements OnInit{
   Modify(): void {
 
     const id = 1;
-
+    this.persona.img = this.imageService.url;
     this.personaService.UpdatePersona(id, this.persona).subscribe({
       next: data => { this.router.navigate(['']); }, error: err => {
         alert("error al modificar experiencia"); 
@@ -54,6 +56,9 @@ export class EditPersonaComponent implements OnInit{
 
   cargarImage($event:any): void{
 
+    const name = "perfil-"+1;
+
+    this.imageService.cargarImage($event, name);
   }
 
 }
