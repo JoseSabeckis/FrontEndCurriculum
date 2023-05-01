@@ -21,7 +21,7 @@
                     <tr *ngFor="let edu of educacion">
                         <td>{{edu.titulo}} - {{edu.years}}</td>
                         <td>{{edu.descripcion}}</td>
-                        <td *ngIf="isLogged"><button class="btn btn-light" routerLink="editareducacion/{{edu.id}}"><i
+                        <td *ngIf="isLogged"><button class="btn btn-light" style="background-color: orange;" routerLink="editareducacion/{{edu.id}}"><i
                                     class="bi bi-folder-plus"></i>Edit</button></td>
                         <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(edu.id)"><i
                                     class="bi bi-folder-minus"></i>Delete</button></td>

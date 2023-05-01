@@ -1,7 +1,7 @@
 <div class="row">
-  <h1>Hard And Soft Skills</h1>
+  <h1 style="background-color: greenyellow;">Hard And Soft Skills</h1>
 
-  <button type="button" class="btn btn-dark" routerLink="/nuevahardysoftskill" *ngIf="isLogged">New</button>
+  <button type="button" class="btn btn-dark" routerLink="/nuevahardysoftskill" *ngIf="isLogged">New Hard and Soft</button>
 
   <div class="text-center col-sm-4 col-md-4 col-lg-4 contorno" *ngFor="let skil of skills">
 
@@ -24,7 +24,7 @@
         </circle-progress>
       </td>
       <div class="movemore">
-        <td *ngIf="isLogged"><button class="btn btn-light" routerLink="editarhardysoftskill/{{skil.id}}"><i
+        <td *ngIf="isLogged"><button class="btn btn-light" style="background-color: gold;" routerLink="editarhardysoftskill/{{skil.id}}"><i
           class="bi bi-folder-plus"></i>Edit</button></td>
         <td *ngIf="isLogged"><button class="btn btn-danger moveleft" (click)="delete(skil.id)"><i
           class="bi bi-folder-minus"></i>Delete</button></td>

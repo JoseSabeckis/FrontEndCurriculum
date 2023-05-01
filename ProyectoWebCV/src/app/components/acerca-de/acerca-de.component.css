@@ -10,8 +10,13 @@
 }
 
 .abajo{
-    margin-top: 150px;
-    margin-left: 170px;
+    margin-top: 80%;/*150*/
+    margin-left: 80%;/*170*/
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+}
+
+.editar{
     background-color: rgb(0, 0, 0);
     color: aqua;
 }
@@ -32,15 +37,22 @@
 
 }
 
-
 @media (max-width:575px) {
 
     #perfil{
+        box-shadow: 5px 5px 5px 3px gray;
         position: absolute;
         border-radius: 10%;
         width: 30%;
         left: 35%;
-        top: 220px;
+        top: 60%;/*220*/
+    }
+
+    .abajo{
+        margin-top: 10%;/*150*/
+        margin-left: 45%;/*170*/
+        background-color: rgb(0, 0, 0);
+        color: aqua;
     }
 
 }
