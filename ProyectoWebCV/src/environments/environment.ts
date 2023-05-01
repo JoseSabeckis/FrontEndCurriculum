@@ -11,6 +11,6 @@ export const environment = {
     
     production: false,
 
-    Url: "http://localhost:8080/",
+    Url: "ultimobackcv-production.up.railway.app/",
 
 }

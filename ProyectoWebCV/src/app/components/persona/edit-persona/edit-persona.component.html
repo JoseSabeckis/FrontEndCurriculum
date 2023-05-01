@@ -9,6 +9,7 @@
       <p><input type="text" placeholder="titulo" id="titulo" name="titulo" [(ngModel)]="persona.titulo"></p>
       <p><input type="file" placeholder="img" id="img" name="img" accept=".jpg, .jpeg, .png" [(ngModel)]="persona.img" (change)="cargarImage($event)"></p>
       <div class="imagen">
+        <p>Esperar a que aparezca la imagen para guardar</p>
         <img [src]="imageService.url" width="10%">
       </div>
       <button value="Crear" class="btn btn-dark crear">Modificar</button>
