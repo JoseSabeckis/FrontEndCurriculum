@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AcercaService {
 
-  Url = environment.Url + 'api/test/acerca/';
+  Url = environment.firebase.Url + 'api/test/acerca/';
 
   constructor(private http: HttpClient) { }
 

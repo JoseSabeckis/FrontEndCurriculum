@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
 
-  authURL = environment.Url + 'api/auth/';
+  authURL = environment.firebase.Url + 'api/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

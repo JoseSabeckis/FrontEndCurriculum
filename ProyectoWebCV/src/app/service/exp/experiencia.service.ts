@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ExperienciaService {
 
-  Url = environment.Url + 'api/test/experiencia/'; 
+  Url = environment.firebase.Url + 'api/test/experiencia/'; 
 
   constructor(private http: HttpClient) { }
 

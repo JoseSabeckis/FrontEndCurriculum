@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SkillService {
 
-  Url = environment.Url + 'api/test/hys/';
+  Url = environment.firebase.Url + 'api/test/hys/';
 
   constructor(private http: HttpClient) { }
 
