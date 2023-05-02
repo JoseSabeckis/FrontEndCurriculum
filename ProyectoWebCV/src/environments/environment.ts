@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '413804569590',
     production: true,
     Url: 'ultimobackcv-production.up.railway.app/',
-  },
-}
+  }
+};
