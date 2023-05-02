@@ -9,12 +9,12 @@ import { environment } from 'src/environments/environment';
 })
 export class PersonaServicioService {
 
-  Url = environment.firebase.Url + `api/test/personas/`;//prueba comillas
+  Url = environment.firebase.Url + "api/test/personas/";
 
   constructor(private http: HttpClient) { }
 
   public getPersona(): Observable<persona>{
-    return this.http.get<persona>(this.Url+`traer/perfil`);    
+    return this.http.get<persona>(this.Url+"traer/perfil");    
   }
 
   public UpdatePersona(id: number, persona: persona): Observable<any>{
