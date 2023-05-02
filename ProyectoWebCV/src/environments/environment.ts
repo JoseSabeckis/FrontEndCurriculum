@@ -8,6 +8,6 @@ export const environment = {
     authDomain: 'curriculumwebfloresjose.firebaseapp.com',
     messagingSenderId: '413804569590',
     production: true,
-    Url: "ultimobackcv-production.up.railway.app/",
+    Url: 'ultimobackcv-production.up.railway.app/',
   },
 }

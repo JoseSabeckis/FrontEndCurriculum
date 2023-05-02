@@ -1,4 +1,4 @@
 export const environment = {
     production: false,//prueba-true
-    Url: "ultimobackcv-production.up.railway.app/",
+    Url: 'ultimobackcv-production.up.railway.app/',
 }
