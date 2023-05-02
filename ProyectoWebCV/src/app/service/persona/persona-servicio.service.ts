@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class PersonaServicioService {
 
-  Url = environment.firebase.Url + 'api/test/personas/';
+  Url = environment.firebase.Url + `api/test/personas/`;//prueba comillas
 
   constructor(private http: HttpClient) { }
 
