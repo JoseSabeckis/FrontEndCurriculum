@@ -40,7 +40,7 @@ export class NuevaEducacionComponent implements OnInit{
         alert("educacion creada");
         this.router.navigate(['']);
       }, error: err => {
-        alert("Fallo");
+        alert("Fallo al crearla verifique datos");
         this.router.navigate([''])
       }
     }

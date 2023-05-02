@@ -48,7 +48,8 @@ export class LoginComponent implements OnInit {
           this.isLogged = false;
           this.isLogginDail = true;
           this.errMsj = err.error.mensaje;
-          console.log(this.errMsj)}          
+          console.log(this.errMsj);
+          alert("verifique password y usuario");}          
     });
 
   }

@@ -32,7 +32,7 @@ export class EditAcercaComponent implements OnInit{
     this.acercaService.getAcercaDe().subscribe({
       next: data => { this.acerca = data },
       error: err => {
-        alert("no se encontro nad acerca de mi");
+        alert("no se encontro nada acerca de mi");
         this.route.navigate(['']);
       }
     })

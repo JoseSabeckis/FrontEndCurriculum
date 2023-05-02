@@ -47,7 +47,7 @@ export class EditPersonaComponent implements OnInit{
     this.persona.img = this.imageService.url;
     this.personaService.UpdatePersona(id, this.persona).subscribe({
       next: data => { this.router.navigate(['']); }, error: err => {
-        alert("error al modificar experiencia"); 
+        alert("error al modificar persona verifique datos"); 
         this.router.navigate(['']);
       }
     })

@@ -40,7 +40,7 @@ export class NewHardsoftComponent implements OnInit{
         alert("hard y soft skill creada");
         this.router.navigate(['']);
       }, error: err => {
-        alert("Fallo");
+        alert("Fallo, verificar datos");
         this.router.navigate([''])
       }
     });

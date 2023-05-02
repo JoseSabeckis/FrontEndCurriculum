@@ -40,7 +40,7 @@ export class UpdExperienciaComponent implements OnInit {
         alert("experiencia creada");
         this.router.navigate(['']);
       }, error: err => {
-        alert("Fallo");
+        alert("Fallo al crearla verifique datos");
         this.router.navigate([''])
       }
     }
