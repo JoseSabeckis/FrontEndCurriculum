@@ -19,7 +19,7 @@
                         <td><h3>Operaciones</h3></td>
                     </tr>
                     <tr *ngFor="let edu of educacion">
-                        <td>"{{edu.titulo}}" - "{{edu.years}}"</td>
+                        <td>"{{edu.titulo}}" - "{{edu.years}} año/s"</td>
                         <td>"{{edu.descripcion}}"</td>
                         <td *ngIf="isLogged"><button class="btn btn-light" style="background-color: orange;" routerLink="editareducacion/{{edu.id}}"><i
                                     class="bi bi-folder-plus"></i>Edit</button></td>
