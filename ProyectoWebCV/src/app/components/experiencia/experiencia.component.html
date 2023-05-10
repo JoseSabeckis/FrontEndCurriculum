@@ -17,7 +17,7 @@
                     <tr>
                         <td><h3>Nombre</h3></td>
                         <td><h3>Descripcion</h3></td>
-                        <td><h3>Operaciones</h3></td>
+                        <td *ngIf="isLogged"><h3>--</h3></td>
                     </tr>
                     <tr *ngFor="let exp of experiencia">
                         <td>"{{exp.titulo}}" - "{{exp.years}} año/s"</td>

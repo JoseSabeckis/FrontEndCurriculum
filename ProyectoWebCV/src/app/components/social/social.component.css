@@ -3,7 +3,17 @@ img{
     margin-right: 5px;
 }
 
-.tamanio{
-    width: 30%;
-    height: 8%;
+@media (max-width:474px) {
+
+img{
+    height: 25px;
+    margin-right: 5px;
+}
+
+.minimo{
+    width: 25%;
+    height: 1%;
+    font-size: small;
+}
+
 }

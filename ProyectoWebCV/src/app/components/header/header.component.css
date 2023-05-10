@@ -5,5 +5,12 @@ div{
 app-social{
     float: right;
     margin-top: 30px;
-    margin-right: 25px;
+    margin-right: 20px;
+}
+
+@media (max-width:474px) {
+    app-social{
+        margin-top: 20px;
+        margin-right: 1px;
+    }
 }
