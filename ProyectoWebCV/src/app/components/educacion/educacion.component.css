@@ -25,3 +25,15 @@ h3{
     display: flex;
     justify-content: right;
 }
+
+@media (max-width:575px) {
+
+    .pantalla{
+        display: flex;
+        flex-direction: column;
+    }
+    .min{
+        font-size: small;
+    }
+
+}

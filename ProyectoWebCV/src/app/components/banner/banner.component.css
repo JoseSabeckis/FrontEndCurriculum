@@ -2,3 +2,11 @@ img{
     width: 100%;
     height: 250px;
 }
+
+@media (max-width:474px) {
+
+    img{
+        height: 200px;
+    }
+    
+}

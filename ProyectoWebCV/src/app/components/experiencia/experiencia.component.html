@@ -22,10 +22,13 @@
                     <tr *ngFor="let exp of experiencia">
                         <td>"{{exp.titulo}}" - "{{exp.years}} año/s"</td>
                         <td>"{{exp.descripcion}}"</td>
-                        <td *ngIf="isLogged"><button class="btn btn-light" style="background-color: aqua;" routerLink="editarexperiencia/{{exp.id}}"><i
-                                    class="bi bi-folder-plus"></i>Edit</button></td>
-                        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(exp.id)"><i
-                                    class="bi bi-folder-minus"></i>Delete</button></td>
+                        <div class="pantalla">
+                            <td *ngIf="isLogged"><button class="btn btn-light min" style="background-color: aqua;" routerLink="editarexperiencia/{{exp.id}}"><i
+                                class="bi bi-folder-plus"></i>Edit</button></td>
+                            <td *ngIf="isLogged"><button class="btn btn-danger min" (click)="delete(exp.id)"><i
+                                class="bi bi-folder-minus"></i>Del.</button></td>
+                        </div>
+                        
                     </tr>
                 </tbody>
             </table>

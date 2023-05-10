@@ -3,9 +3,13 @@ div{
 }
 
 app-social{
-    float: right;
     margin-top: 30px;
     margin-right: 20px;
+    float: right;
+}
+
+app-logo{
+    float: left;
 }
 
 @media (max-width:474px) {
