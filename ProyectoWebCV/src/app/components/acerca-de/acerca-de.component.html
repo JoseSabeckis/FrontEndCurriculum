@@ -1,7 +1,7 @@
 <div class="row">
 
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/img-principales/fotomia.jpg" class="img-fluid" id="perfil">
+        <img src="{{persona.img}}" class="img-fluid" id="perfil">
         <button class="btn btn-light abajo" routerLink="editarprincipal" *ngIf="isLogged"><i
             class="bi bi-folder-plus"></i>+</button>
     </div>
@@ -9,8 +9,8 @@
     <!--../../../assets/img-principales/fotomia.jpg-->
     
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="name">{{persona.apellido}} {{persona.nombre}}FLORES JOSE ANDRES</p>
-        <p>{{persona.titulo}}PROGRAMADOR</p>
+        <p id="name">{{persona.apellido}} {{persona.nombre}}</p>
+        <p>{{persona.titulo}}</p>
     </div>
 
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -21,8 +21,6 @@
             {{acerca.descripcion}}
         </span>
 
-        <br>
-        <br>
         <br>
         <br>
         <button class="btn btn-light editar" routerLink="/editaracercademi" *ngIf="isLogged"><i
